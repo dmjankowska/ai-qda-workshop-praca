@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Środowiska lokalne i sekrety
+.env
+.venv/
+venv/
+env/
+
+# Lokalne duże dane
+data/raw/**
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.parquet
+*.feather
+
+# Zachowaj puste foldery w repozytorium
+!data/raw/.gitkeep
+!**/.gitkeep
+
+# Eksporty i pliki tymczasowe
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Wyniki uruchomien warsztatowych (w repo pozostaja tylko .gitkeep)
+00_github_colab/outputs/*
+!00_github_colab/outputs/README.md
+04_vibe_coding/outputs/*
+!04_vibe_coding/outputs/README.md
+04_vibe_coding/*/outputs/*
+!04_vibe_coding/*/outputs/.gitkeep
+05_ai_programming/outputs/*
+!05_ai_programming/outputs/.gitkeep
+04_vibe_coding/reference_bundles/*.zip
+04_vibe_coding/_openai_jobs/
+04_vibe_coding/author_review_results/**/_checkpoints/
+test_github_colab.csv
+mini_corpus_prepared.csv
+mini_corpus_statistics.csv
+
+# System operacyjny
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pliki lokalne prowadzących
+.idea/
+_organizacja/
